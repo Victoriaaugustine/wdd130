@@ -5,60 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Victoria Goodnews Augustine | WDD 130</title>
   <style>
+    /* 🎨 Color Palette */
+    :root {
+      --primary: #0000FF;   /* Blue */
+      --secondary: #FFC0CB; /* Pink */
+      --accent: #FFFF00;    /* Yellow */
+      --neutral: #FFFFFF;   /* White */
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      background-color: var(--neutral);
+      color: #333;
     }
+
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px;
-      background-color: #f0f0f0;
+      padding: 15px;
+      background-color: var(--primary);
+      color: var(--neutral);
     }
+
     header img {
       height: 50px;
     }
+
     nav a {
       margin-left: 15px;
       text-decoration: none;
       font-weight: bold;
-      color: #333;
+      color: var(--neutral);
+      transition: color 0.3s ease;
     }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
     main {
       padding: 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
+
     .profile {
       text-align: center;
     }
+
     .profile img {
       border-radius: 50%;
       width: 200px;
       height: 200px;
       object-fit: cover;
       margin: 15px 0;
+      border: 4px solid var(--secondary);
     }
+
     h1 {
-      color: darkblue;
+      color: var(--primary);
       text-align: center;
       margin-bottom: 10px;
     }
+
     section {
-      background: #fafafa;
-      padding: 15px;
+      background: var(--secondary);
+      padding: 20px;
       margin-top: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
+    section h2 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    section p {
+      margin-bottom: 10px;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 15px auto;
+      border-radius: 8px;
+      border: 3px solid var(--accent);
+    }
+
     footer {
       text-align: center;
       margin-top: 30px;
       padding: 15px;
-      background-color: #f0f0f0;
+      background-color: var(--primary);
+      color: var(--neutral);
+    }
+
+    footer p {
+      margin: 0;
     }
   </style>
 </head>
@@ -79,7 +128,7 @@
     </div>
 
     <section>
-      <h2 style="color: rgb(11, 91, 11);">About Me</h2>
+      <h2>About Me</h2>
       <p>
         Hello! My name is <strong>Victoria Goodnews Augustine</strong>, and I am from 
         Akwa Ibom State in Nigeria. I am currently studying 
@@ -91,15 +140,15 @@
         In my free time, I love helping people, connecting with others, and 
         working on personal projects.
       </p>
-      <p style="color: purple;">
+      <p>
         I am excited to improve my skills in this Web Fundamentals course and 
         continue growing as a software developer.
       </p>
     </section>
 
     <section>
-      <h2 style="color: brown;">My Tribe & Origin</h2>
-      <h2 style="color: rgb(25, 74, 8);">Akwa Ibom State, Niger Delta, Nigeria</h2>
+      <h2>My Tribe & Origin</h2>
+      <h2>Akwa Ibom State, Niger Delta, Nigeria</h2>
 
       <img src="images/akwa.jpg" alt="Akwa Ibom">
 
