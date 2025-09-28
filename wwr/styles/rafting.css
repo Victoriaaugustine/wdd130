@@ -175,42 +175,27 @@ nav ul li a.active {
 
 /* Footer */
 footer {
-  background: #FFC0CB; /* Secondary */
+  background-color: var(--primary);
+  color: var(--neutral);
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 1rem;
 }
 
-footer p {
-  margin-bottom: 10px;
-  color: #000;
-  font-weight: 500;
+footer .socialmedia {
+  margin-top: 0.5rem;
 }
 
-.social a img {
-  width: 28px;
-  margin: 0 6px;
-  transition: transform 0.2s ease, border-color 0.2s ease;
-  border: 2px solid #0000FF; /* Primary */
-  border-radius: 50%;
-  background: #FFFF00; /* Accent */
+footer .socialmedia a {
+  text-decoration: none;   /* required rule */
 }
 
-.social a img:hover {
-  transform: scale(1.1);
-  border-color: #FFC0CB; /* Secondary hover */
+footer .socialmedia a img {
+  width: 24px;
+  height: auto;
+  margin: 0 0.5rem;
+  transition: transform 0.2s;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-content,
-  .history-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-content p,
-  .history-content p {
-    text-align: center;
-  }
+footer .socialmedia a img:hover {
+  transform: scale(1.2);
 }
