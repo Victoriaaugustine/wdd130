@@ -24,14 +24,19 @@ header {
 }
 
 header img {
-  height: auto;         /* Show real logo size */
-  max-height: 80px;    /* Prevent logo from being too tall */
+  height: auto;         
+  max-height: 80px;     
   width: auto;
   display: block;
-  margin-bottom: 10px; /* Space between logo and nav */
+  margin-bottom: 10px;  
 }
 
-/* Nav stacked under logo */
+/* ✅ Required nav rule */
+nav {
+  background-color: var(--primary);
+  padding: 0.5rem;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -39,7 +44,7 @@ nav ul {
 }
 
 nav li {
-  margin: 8px 0; /* space between links */
+  margin: 8px 0; 
 }
 
 nav a {
@@ -109,6 +114,8 @@ footer {
   color: var(--neutral);
   text-align: center;
   padding: 1rem;
+  margin-top: 2rem;       
+  border-top: 2px solid var(--neutral);
 }
 
 footer .social {
@@ -116,7 +123,7 @@ footer .social {
 }
 
 footer .social a img {
-  width: 24px;   /* Small footer icons */
+  width: 24px;   
   height: auto;
   margin: 0 0.5rem;
   transition: transform 0.2s;
