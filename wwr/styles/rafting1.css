@@ -25,10 +25,10 @@ header {
 
 header img {
   height: auto;         /* Show real logo size */
-  max-height: 80px;    /* Prevent logo from being too tall */
+  max-height: 80px;     /* Prevent logo from being too tall */
   width: auto;
   display: block;
-  margin-bottom: 10px; /* Space between logo and nav */
+  margin-bottom: 10px;  /* Space between logo and nav */
 }
 
 /* Nav stacked under logo */
