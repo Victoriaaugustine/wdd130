@@ -1,9 +1,3 @@
-body, h1, h2, p, nav, footer {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-}
-
-
 :root {
   --primary-color: #0000FF;   
   --secondary-color: #FFC0CB; 
