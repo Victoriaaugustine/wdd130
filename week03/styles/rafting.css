@@ -1,10 +1,9 @@
 :root {
-  --primary-color: #0000FF;   
-  --secondary-color: #FFC0CB; 
-  --accent-color: #FFFF00;  
-  --neutral-color: #FFFFFF;   
+  --primary-color: #0000FF;     /* Blue */
+  --secondary-color: #FFC0CB;   /* Pink */
+  --accent-color: #FFFF00;      /* Yellow */
+  --neutral-color: #FFFFFF;     /* White */
 }
-
 
 * {
   margin: 0;
@@ -14,15 +13,17 @@
 
 body {
   background-color: var(--neutral-color);
-  color: #000; 
+  color: #000;
+  font-family: Arial, sans-serif;
 }
 
-
+/* ---------------- Layout ---------------- */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
+/* ---------------- Header ---------------- */
 header {
   background-color: var(--primary-color);
   color: var(--neutral-color);
@@ -53,61 +54,62 @@ nav ul li a:hover {
   color: var(--accent-color);
 }
 
-
+/* ---------------- Hero Section ---------------- */
 .hero {
   position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
 }
 
 .hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  width: 100%;
-  height: auto;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  background-color: var(--accent-color);
-  color: var(--primary-color);
-  opacity: 0.9;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
+.hero h1,
 .hero article {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background-color: rgba(255, 192, 203, 0.9);
-  padding: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  max-width: 80%;
+  color: var(--neutral-color);
+}
+
+/* Overlay title */
+.hero h1 {
+  top: 20%;
+  font-size: 2.5rem;
+  color: var(--accent-color); /* Yellow highlight */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+/* Overlay article */
+.hero article {
+  top: 40%;
+  font-size: 1.2rem;
+  background: rgba(0,0,255,0.6); /* Blue overlay with transparency */
+  padding: 1rem;
   border-radius: 8px;
-  color: #000;
+  color: var(--neutral-color);
 }
 
-
-h1, h2 {
+/* ---------------- History Section ---------------- */
+.history h2 {
   color: var(--primary-color);
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-section, article, p, nav {
-  margin: 16px;
-  padding: 8px;
+  margin-bottom: 12px;
 }
 
 .history img {
-  display: block;
-  max-width: 300px;
-  margin: 16px auto;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  float: right;
+  margin: 0 0 1rem 1rem;
+  width: 250px;
 }
 
+/* ---------------- Adventure Section ---------------- */
 .adventure {
   background-color: var(--secondary-color);
   color: #000;
@@ -118,7 +120,11 @@ section, article, p, nav {
   font-weight: 500;
 }
 
+.adventure h2 {
+  color: var(--primary-color);
+}
 
+/* ---------------- Footer ---------------- */
 footer {
   background-color: var(--primary-color);
   color: var(--neutral-color);
