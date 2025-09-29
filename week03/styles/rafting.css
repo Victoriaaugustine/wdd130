@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #0000FF;     /* Blue */
-  --secondary-color: #FFC0CB;   /* Pink */
-  --accent-color: #FFFF00;      /* Yellow */
-  --neutral-color: #FFFFFF;     /* White */
+  --primary-color: #0000FF;   
+  --secondary-color: #FFC0CB;  
+  --accent-color: #FFFF00;    
+  --neutral-color: #FFFFFF; 
 }
 
 * {
@@ -14,7 +14,7 @@
 body {
   background-color: var(--neutral-color);
   color: #000;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
 /* ---------------- Layout ---------------- */
@@ -69,29 +69,27 @@ nav ul li a:hover {
   display: block;
 }
 
-.hero h1,
-.hero article {
+/* ✅ Use a wrapper for overlay text */
+.hero-text {
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
-  max-width: 80%;
   color: var(--neutral-color);
+  max-width: 80%;
 }
 
-/* Overlay title */
-.hero h1 {
-  top: 20%;
+.hero-text h1 {
   font-size: 2.5rem;
   color: var(--accent-color); /* Yellow highlight */
   text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+  margin-bottom: 1rem;
 }
 
-/* Overlay article */
-.hero article {
-  top: 40%;
+.hero-text article {
   font-size: 1.2rem;
-  background: rgba(0,0,255,0.6); /* Blue overlay with transparency */
+  background: rgba(0,0,255,0.6); /* Blue transparent box */
   padding: 1rem;
   border-radius: 8px;
   color: var(--neutral-color);
@@ -107,6 +105,7 @@ nav ul li a:hover {
   float: right;
   margin: 0 0 1rem 1rem;
   width: 250px;
+  border: 3px solid var(--secondary-color); /* optional styling */
 }
 
 /* ---------------- Adventure Section ---------------- */
