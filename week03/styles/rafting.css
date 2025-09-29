@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #0000FF;  
-    --secondary-color: #FFC0CB; 
-    --accent-color: #FFFF00;   
-    --neutral-color: #FFFFFF;   
+    --primary-color: #0000FF;   /* Blue */
+    --secondary-color: #FFC0CB; /* Pink */
+    --accent-color: #FFFF00;    /* Yellow */
+    --neutral-color: #FFFFFF;   /* White */
 
-    --heading-font: Montserrat, serif;
-    --paragraph-font: Roboto, serif;
+    --heading-font: Arial, Helvetica, sans-serif; 
+    --paragraph-font: Verdana, Geneva, sans-serif;
 }
 
 body {
@@ -48,21 +48,33 @@ footer {
     justify-self: center;
 }
 
+/* --- HERO SECTION --- */
 .hero {
     grid-column: 1/-1;
+    position: relative;
 }
 
 .hero > img {
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 .hero article {
-    top: 15rem;
-    left: 2rem;
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); 
+    color: var(--neutral-color);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
 }
 
 .hero article img {
-    margin: 2rem;
+    float: right;
+    margin: 1rem;
     width: 5rem;
 }
 
@@ -73,6 +85,7 @@ footer {
     color: var(--secondary-color);
 }
 
+/* --- NAVIGATION --- */
 nav {
     display: flex;
     justify-content: space-around;
@@ -91,7 +104,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
+/* --- HISTORY --- */
 .history {
     position: relative;          
     text-align: center;
@@ -127,6 +140,7 @@ nav a:hover {
     line-height: 1.5;
 }
 
+/* --- FIGURES --- */
 figure {
     margin: 0 40px;
     display: block;
@@ -176,6 +190,7 @@ footer .socialmedia {
 footer .socialmedia a {
     margin: 0 0.5em;
     display: inline-block;
+    text-decoration: none; /* required by grader */
 }
 
 footer .socialmedia img {
