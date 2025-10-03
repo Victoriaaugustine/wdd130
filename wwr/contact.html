@@ -2,16 +2,13 @@
 <html lang="en-US">
 <head>
  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us, Akwa Ibom Nigeria Water Rafting</title>
-  <meta name="description" content="Akwa Ibom State, Nigeria white water rafting company specialises in organising and guiding adventure seekers with thrilling outdoor experiences while ensuring safety and fun.">
-  <meta name="author" content="Victoria Goodnews Augustine">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contact Us | White Water Rafting</title>
+ <meta name="description" content="Akwa Ibom State, Nigeria white water rafting company specialises in organising and guiding adventure seekers with thrilling outdoor experiences while ensuring safety and fun.">
+ <meta name="author" content="Victoria Goodnews Augustine">
 
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="styles/rafting.css">
-
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+ <!-- Link to CSS -->
+ <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
 
@@ -42,8 +39,18 @@
   <!-- Contact Form Section -->
   <main>
     <section class="form-section">
-      <!-- Interactive Map -->
-      <div id="map"></div>
+      <!-- Akwa Ibom Google Map -->
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.099406768999!2d7.924722!3d5.051111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067d021c4e2d6e9%3A0x98b5295f8cf63e4d!2sAkwa%20Ibom%20State!5e0!3m2!1sen!2sng!4v1696269876543!5m2!1sen!2sng" 
+          width="400" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
       <!-- Contact Form -->
       <form>
@@ -57,15 +64,9 @@
 
         <!-- Radio Buttons -->
         <p>Message Purpose</p>
-        <label>
-          <input type="radio" name="purpose" value="inquiry"> General Inquiry
-        </label><br>
-        <label>
-          <input type="radio" name="purpose" value="reservation"> Reservation Question
-        </label><br>
-        <label>
-          <input type="radio" name="purpose" value="website"> Website Suggestion
-        </label>
+        <label><input type="radio" name="purpose" value="inquiry"> General Inquiry</label><br>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
 
         <!-- Message -->
         <label for="message">Message</label>
@@ -112,22 +113,5 @@
     </div>
   </footer>
 
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    // Initialize map, centered on Uyo (Akwa Ibom capital)
-    var map = L.map('map').setView([5.0377, 7.9128], 9);
-
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-
-    // Add marker for Uyo
-    L.marker([5.0377, 7.9128]).addTo(map)
-      .bindPopup('<b>Uyo</b><br>Capital of Akwa Ibom State')
-      .openPopup();
-  </script>
 </body>
 </html>
