@@ -211,3 +211,96 @@ footer .socialmedia a img {
 footer .socialmedia a img:hover {
   transform: scale(1.2);
 }
+
+
+
+/* Contact Info */
+.contact-info {
+  text-align: center;
+  padding: 2rem;
+  background: var(--secondary-color);
+  color: #000;
+}
+
+.contact-info h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Form Section */
+.form-section {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.form-section .map img {
+  max-width: 400px;
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+form input,
+form textarea {
+  padding: 0.7rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  width: 100%;
+}
+
+form button {
+  background: var(--primary-color);
+  color: var(--neutral-color);
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--accent-color);
+  color: #000;
+}
+
+/* Employees */
+.employees {
+  padding: 2rem;
+  text-align: center;
+}
+
+.employees h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.profiles img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid var(--secondary-color);
+  border-radius: 50%;
+}
