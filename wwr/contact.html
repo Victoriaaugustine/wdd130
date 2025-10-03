@@ -3,12 +3,15 @@
 <head>
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us,Akwa Ibom Nigeria Water Rafting</title>
+  <title>Contact Us, Akwa Ibom Nigeria Water Rafting</title>
   <meta name="description" content="Akwa Ibom State, Nigeria white water rafting company specialises in organising and guiding adventure seekers with thrilling outdoor experiences while ensuring safety and fun.">
   <meta name="author" content="Victoria Goodnews Augustine">
 
   <!-- Link to CSS -->
   <link rel="stylesheet" href="styles/rafting.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
 
@@ -39,10 +42,10 @@
   <!-- Contact Form Section -->
   <main>
     <section class="form-section">
-      <div class="map">
-        <img src="images/map.png" alt="Map showing rafting company location">
-      </div>
+      <!-- Interactive Map -->
+      <div id="map"></div>
 
+      <!-- Contact Form -->
       <form>
         <!-- Name -->
         <label for="name">Name</label>
@@ -109,5 +112,22 @@
     </div>
   </footer>
 
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Initialize map, centered on Uyo (Akwa Ibom capital)
+    var map = L.map('map').setView([5.0377, 7.9128], 9);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add marker for Uyo
+    L.marker([5.0377, 7.9128]).addTo(map)
+      .bindPopup('<b>Uyo</b><br>Capital of Akwa Ibom State')
+      .openPopup();
+  </script>
 </body>
 </html>

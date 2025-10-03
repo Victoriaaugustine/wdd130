@@ -76,12 +76,14 @@ nav ul li a:hover {
   padding: 2rem;
 }
 
-.form-section .map img {
-  max-width: 400px;
+#map {
+  height: 400px;
+  width: 400px;
   border: 3px solid var(--primary-color);
   border-radius: 10px;
 }
 
+/* Form */
 form {
   flex: 1;
   display: flex;
