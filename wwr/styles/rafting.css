@@ -59,6 +59,9 @@ nav ul li a.active {
   border-color: var(--secondary-color);
 }
 
+
+
+
 .hero {
   position: relative;           /* allows overlay positioning */
   width: 100%;
