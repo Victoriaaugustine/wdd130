@@ -31,7 +31,7 @@
     <p>
       Essien Udim Local Government Area<br>
       Akwa Ibom State, Nigeria<br>
-      0808 984 0148<br>
+      +234-808-984-0148<br>
       <a href="mailto:victoriagoodnewsaugustine@gmail.com">victoriagoodnewsaugustine@gmail.com</a>
     </p>
   </section>
@@ -52,30 +52,33 @@
       </div>
 
       <!-- Contact Form -->
-      <form>
+      <form action="/submit-form" method="post">
         <!-- Name -->
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name">
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
         <!-- Email -->
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
         <!-- Radio Buttons -->
         <p>Message Purpose</p>
-        <label><input type="radio" name="purpose" value="inquiry"> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+        <input type="radio" id="inquiry" name="purpose" value="inquiry">
+        <label for="inquiry">General Inquiry</label><br>
+
+        <input type="radio" id="reservation" name="purpose" value="reservation">
+        <label for="reservation">Reservation Question</label><br>
+
+        <input type="radio" id="website" name="purpose" value="website">
+        <label for="website">Website Suggestion</label>
 
         <!-- Message -->
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
 
         <!-- Checkbox -->
-        <label class="checkbox">
-          <input type="checkbox" name="subscribe">
-          Please Subscribe me to the monthly newsletter
-        </label>
+        <input type="checkbox" id="newsletter" name="subscribe">
+        <label for="newsletter">Please Subscribe me to the monthly newsletter</label>
 
         <!-- Submit -->
         <button type="submit">Get in Touch!</button>
