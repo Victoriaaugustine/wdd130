@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Home | Akwa Ibom White Water Rafting</title>
   <meta name="description" content="Akwa Ibom White Water Rafting — join our guided rafting trips, sign up for the newsletter, and discover thrilling river adventures." />
-  <link rel="stylesheet" href="styles/trip.css" />
+  <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <a href="index.html" class="logo-link">
-          <img src="images/logo.png" alt="Akwa Ibom White Water Rafting logo" class="logo">
+          <img src="images/logo.jpg" alt="Akwa Ibom White Water Rafting logo" class="logo">
         </a>
         <div class="site-title">
           <h1 class="visually-hidden">Akwa Ibom White Water Rafting</h1>
@@ -33,78 +33,51 @@
   <main>
     <!-- HERO -->
     <section class="hero" aria-label="Hero">
-      <img src="images/hero.jpg" alt="Group rafting on the river" class="hero-img">
+      <div class="hero-overlay">
+        <img src="images/hero.jpg" alt="Group rafting on the river" class="hero-img">
+      </div>
       <div class="hero-panel">
-        <h2 class="hero-title">Experience the Thrill of White Water Rafting</h2>
-        <p class="hero-sub">Guided trips, trained instructors, unforgettable river adventures in Akwa Ibom.</p>
-
-        <!-- Newsletter -->
-        <form class="newsletter" action="#" method="post" aria-label="Newsletter signup">
-          <fieldset>
-            <legend class="visually-hidden">Join our newsletter</legend>
-
-            <label for="fullname">Name</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required>
-
-            <button type="submit" class="btn btn-primary">Join Our Adventure</button>
-          </fieldset>
-        </form>
-
-        <p><a class="btn btn-cta" href="trips.html">See Trips & Book Now</a></p>
+        <h2 class="hero-title">Have an Adventure</h2>
+        <p class="hero-sub">Make Memories with Akwa Ibom White Water Rafting</p>
+        <a href="trips.html" class="btn btn-cta">Book Now</a>
       </div>
     </section>
 
-    <!-- Intro + small image -->
-    <section class="intro container" aria-labelledby="intro-h">
-      <h3 id="intro-h" class="section-title">Who We Are</h3>
-      <div class="intro-grid">
-        <div class="intro-text">
-          <p>We are a locally-run rafting company focused on safety, fun, and environmental respect. Our guides are certified and experienced — we run family floats, half-day rapids, and full-day expeditions.</p>
+    <!-- Activities Section -->
+    <section class="activities container" aria-label="Adventure Highlights">
+      <div class="activity">
+        <img src="images/river.jpg" alt="River adventure">
+        <h3>Rivers</h3>
+      </div>
+      <div class="activity">
+        <img src="images/camping.jpg" alt="Camping site">
+        <h3>Camping</h3>
+      </div>
+      <div class="activity">
+        <img src="images/rapids.jpg" alt="Rafting on rapids">
+        <h3>Rapids</h3>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature" aria-label="More Than Just The Thrill">
+      <div class="feature-inner container">
+        <img src="images/mountain.jpg" alt="Mountain landscape">
+        <div class="feature-text">
+          <h2>More Than Just The Thrill</h2>
+          <p>
+            Enjoy the breathtaking scenery — from valleys, meadows, canyons, and high peaks.
+            It’s way more than just the rapids. Get away from it all and relax among the
+            beauty of Akwa Ibom’s great outdoors.
+          </p>
+          <a href="about.html" class="btn">Join Us</a>
         </div>
-        <figure class="intro-figure">
-          <img src="images/intro-thumb.jpg" alt="Guide preparing raft" class="intro-thumb">
-          <figcaption class="caption">Experienced guides & safety gear</figcaption>
-        </figure>
       </div>
     </section>
-
-    <!-- Grid gallery using CSS Grid -->
-    <section class="grid-content container" aria-labelledby="adventure-h">
-      <h3 id="adventure-h" class="section-title">Adventure Options</h3>
-      <div class="grid-gallery">
-        <article>
-          <img src="images/thumb1.jpg" alt="Half-day rapids" />
-          <h4>Half-Day Rapids</h4>
-          <p>3–4 hours of heart-pumping rapids. Safety briefing and gear included.</p>
-        </article>
-
-        <article>
-          <img src="images/thumb2.jpg" alt="Family float" />
-          <h4>Family Float</h4>
-          <p>Gentle stretch of river perfect for families and beginners with scenic views.</p>
-        </article>
-
-        <article>
-          <img src="images/thumb3.jpg" alt="Sunset tour" />
-          <h4>Sunset River Tour</h4>
-          <p>Relaxing evening float with beautiful sunset views and swimming stops.</p>
-        </article>
-
-        <article>
-          <img src="images/thumb4.jpg" alt="Full day expedition" />
-          <h4>Full-Day Expedition</h4>
-          <p>Full day on the river: swim stops, lunch, and guided exploration.</p>
-        </article>
-      </div>
-    </section>
-
   </main>
 
   <footer>
-    <p>&copy; 2025 🌟Victoria Goodnews Augustine🌟 🌟Victoria Web & Software Solution @ BYU Idaho</p>
+    <p>&copy; 2025 🌟Victoria Goodnews Augustine🌟 | Victoria Web & Software Solution @ BYU Idaho</p>
     <nav class="socialmedia">
       <a href="https://facebook.com">
         <img src="images/facebook.svg" alt="Facebook"></a>
